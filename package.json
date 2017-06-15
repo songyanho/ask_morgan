@@ -1,41 +1,44 @@
 {
-  "name": "coreui.io",
-  "version": "1.0.0-alpha.5",
-  "description": "Open Source Bootstrap Admin Template",
-  "main": "",
-  "homepage": "http://coreui.io",
-  "github": "https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template#readme",
+  "name": "coreui-react",
+  "version": "1.0.0-alpha.6",
+  "private": true,
+  "homepage": ".",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-env": "^1.5.2",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "react-scripts": "0.9.5",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.5",
+    "semantic-ui": "^2.2.10",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-bundle-analyzer": "^2.3.1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "chart.js": "2.5.0",
+    "history": "^4.6.1",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "15.5.2",
+    "react-addons-transition-group": "15.5.2",
+    "react-chartjs-2": "2.1.0",
+    "react-dom": "15.5.4",
+    "react-router-dom": "4.1.1",
+    "reactstrap": "4.6.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template.git"
-  },
-  "keywords": [
-    "Bootstrap",
-    "Admin",
-    "Template",
-    "Open",
-    "Source",
-    "AngularJS",
-    "Angular",
-    "Angular2",
-    "jQuery",
-    "CSS",
-    "HTML",
-    "RWD",
-    "Dashboard",
-    "Vue",
-    "Vue.js",
-    "Vuejs",
-    "React",
-    "React.js",
-    "Reactjs"
-  ],
-  "author": "Łukasz Holeczek",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/issues"
+    "start": "NODE_ENV=dev webpack-dev-server --hot --inline",
+    "build": "webpack",
+    "build:production": "cross-env NODE_ENV=production npm run build",
+    "dev": "webpack --progress --colors --watch",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
