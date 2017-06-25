@@ -1,0 +1,6 @@
+{
+  "name": "MeetMorgan",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MeetMorgan.js"
+}

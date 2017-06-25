@@ -48,14 +48,12 @@ class Header extends Component {
             <button className="nav-link navbar-toggler sidebar-toggler" type="button" onClick={this.sidebarToggle}>&#9776;</button>
           </li>
           <li className="nav-item px-3">
-            <a className="nav-link" href="#">Dashboard</a>
+            <a className="nav-link" href="#">Home</a>
           </li>
           <li className="nav-item px-3">
-            <a className="nav-link" href="#">Users</a>
+            <a className="nav-link" href="#/ask_morgan">Ask Morgan</a>
           </li>
-          <li className="nav-item px-3">
-            <a className="nav-link" href="#">Settings</a>
-          </li>
+
         </ul>
         <ul className="nav navbar-nav ml-auto">
           <li className="nav-item d-md-down-none">
@@ -71,7 +69,7 @@ class Header extends Component {
             <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
               <button onClick={this.toggle} className="nav-link dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded={this.state.dropdownOpen}>
                 <img src={'img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
-                <span className="d-md-down-none">admin</span>
+                <span className="d-md-down-none">Russell Loh</span>
               </button>
 
               <DropdownMenu className="dropdown-menu-right">

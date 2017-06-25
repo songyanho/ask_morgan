@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Morgan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="daypilot-all.min.js" type="text/javascript"></script>
+    </head>
+    <body onload="myFunction()" style="margin:100px 0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <!-- <div id="hplogocanvasdiv">
+<!--                <canvas width="900" height="330"></canvas>->
+            </div> -->
+            <h1 id="wording">Thank you for using our system!</h1>
+            <br>
+            <h4>An appointment with <a href="Kristnaprofile.html" target="_blank">Krishna</a> has been added to your Outlook calendar!</h4>
+        </div>
+
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 1500);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

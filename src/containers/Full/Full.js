@@ -20,6 +20,12 @@ import Tabs from '../../views/Components/Tabs/'
 import FontAwesome from '../../views/Icons/FontAwesome/'
 import SimpleLineIcons from '../../views/Icons/SimpleLineIcons/'
 
+import AskMorgan from '../../views/Components/AskMorgan/';
+import FindMorgan from '../../views/Components/FindMorgan/';
+import MeetMorgan from '../../views/Components/MeetMorgan/';
+
+require('../../../scss/animate.css');
+
 class Full extends Component {
   render() {
     return (
@@ -27,7 +33,7 @@ class Full extends Component {
         <Header />
         <div className="app-body">
           <Sidebar {...this.props}/>
-          <main className="main">
+          <main className="main" style={{backgroundColor: '#fff'}}>
             <Breadcrumb />
             <div className="container-fluid">
               <Switch>
@@ -44,6 +50,9 @@ class Full extends Component {
                 <Route path="/icons/simple-line-icons" name="Simple Line Icons" component={SimpleLineIcons}/>
                 <Route path="/widgets" name="Widgets" component={Widgets}/>
                 <Route path="/charts" name="Charts" component={Charts}/>
+                <Route path="/ask_morgan" name="Ask Morgan" component={AskMorgan}/>
+                <Route path="/find_morgan" name="Find Morgan" component={FindMorgan}/>
+                <Route path="/meet_morgan" name="Meet Morgan" component={MeetMorgan}/>
                 <Redirect from="/" to="/dashboard"/>
               </Switch>
             </div>
